@@ -4,7 +4,6 @@ import { Drawer, List, ListItem, Avatar, FontIcon } from 'react-md'
 import { connect } from '../store'
 
 const Sidebar = ({ user }) => {
-  console.log(user)
   return (
     user
     ? <Drawer

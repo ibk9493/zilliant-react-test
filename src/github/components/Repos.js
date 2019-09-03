@@ -25,7 +25,6 @@ class Repos extends Component {
       selectRepo,
       unselectRepo
     } = this.props
-    console.log(repos)
     return (
       isFetchingRepos
         ? <CircularProgress id='repos-progress' />
