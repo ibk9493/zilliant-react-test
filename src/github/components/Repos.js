@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
-import { CircularProgress } from 'react-md'
+import { CircularProgress, Card, CardTitle, CardText } from 'react-md'
 
 import { connect } from '../store'
-import RepoList from './RepoList'
-import RepoDetail from './RepoDetail'
 
 class Repos extends Component {
   componentDidMount() {
@@ -20,17 +18,17 @@ class Repos extends Component {
   render() {
     const {
       isFetchingRepos,
-      repos,
-      selectedRepo,
-      selectRepo,
-      unselectRepo
+      repos
     } = this.props
     return (
       isFetchingRepos
         ? <CircularProgress id='repos-progress' />
-        : selectedRepo
-          ? <RepoDetail repo={selectedRepo} unselectRepo={unselectRepo} />
-          : <RepoList repos={repos} selectRepo={selectRepo} />
+        : <Card style={{ marginTop: '90px' }}>
+            <CardTitle>Repository List</CardTitle>
+            <CardText>
+              Here we should display a list of repositories, the user has {repos.length} repos.
+            </CardText>
+          </Card>
     )
   }
 }
