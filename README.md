@@ -1,13 +1,14 @@
 # React/Redux Test
 
-This repo serves as a basis for a small test to show off React/Redux skills.
+This repo serves as a basis for a small test to show off React skills.
 
 # What you should do
 
 1. Fork this repo to your own GitHub account, clone it locally to your machine.
 1. Install dependencies with `npm i` and start the development server with `npm start`
-1. The basic task that you should accomplish is to replace the current store (Created with the Context API) with a redux store, without breaking the current functionality.
-1. This is a guided test, so please feel free to ask any questions you want, we will ask our own questions along the way :).
+1. The basic task that you should accomplish is to create a Component(s) to display the list of repositories as cards and display some information about them.
+1. As a bonus task, you can also create a detail view of each repo which lists all the info of the repo.
+1. This is a guided test, so please feel free to ask any questions you want, we will ask our own questions along the way :). Also you are free to read any documentation during the test (we use react md v1 so go to https://react-md.dev/v1/).
 
 __Bonus:__ Test stuff!
 
