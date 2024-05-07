@@ -1,3 +1,6 @@
+Test
+
+
 # React/Redux Test
 
 This repo serves as a basis for a small test to show off React skills.
